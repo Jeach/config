@@ -1,8 +1,15 @@
-" -----------------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+" VIM configuration file
+"-----------------------------------------------------------------------------
 " Copyright (C) 2018 Christian Jean
 " All Rights Reserved
-" -----------------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+" This configuration has mappings which provide VIM support in web based
+" consoles (ie: Google Cloud or Glitch.com) which would otherwise not allow
+" for CTRL-C or CTRL-W.
+"-----------------------------------------------------------------------------
 "
+
 set number
 set nowrap
 set ruler
