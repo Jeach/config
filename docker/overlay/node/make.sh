@@ -3,7 +3,7 @@
 # Copyright (C) 2018 Christian Jean
 # All Rights Reserved.
 #-----------------------------------------------------------------------------
-# This script will build the current Docker image.
+# This script will build a Node Docker image.
 #
 
 

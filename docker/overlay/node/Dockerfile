@@ -12,9 +12,9 @@ FROM node:8
 
 MAINTAINER Christian Jean <christian.jean@gmail.com>
 
-#VOLUME ["/data"]
-
 WORKDIR /home/nodejs/app
+
+VOLUME /home/nodejs/share
 
 COPY package*.json .
 
@@ -25,7 +25,7 @@ COPY . .
 RUN chown node:node -R /home/nodejs/app
 RUN echo "root:Toto!1234" | chpasswd
 
-EXPOSE 80
+EXPOSE 8080
 
 # By default, Docker runs container as root which inside of the container can
 # pose as a security issue. You would want to run the container as an 
