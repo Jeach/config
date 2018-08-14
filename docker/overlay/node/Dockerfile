@@ -22,7 +22,8 @@ RUN npm install
 
 COPY . . 
 
-RUN echo "Toto!1234" | passwd --stdin root 
+RUN chown node:node -R /home/nodejs/app
+RUN echo "root:Toto!1234" | chpasswd
 
 EXPOSE 80
 
