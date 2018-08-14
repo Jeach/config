@@ -15,11 +15,14 @@ MAINTAINER Christian Jean <christian.jean@gmail.com>
 #VOLUME ["/data"]
 
 WORKDIR /jeach
-
-# Install dependencies
 COPY jeach.txt .
 
-# Bundle app source
-#COPY . . 
+WORKDIR /jeach/one
+COPY one.txt .
+
+WORKDIR /jeach/two
+COPY two.txt .
+
+WORKDIR /
 
 CMD ["bash"]
