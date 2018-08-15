@@ -27,6 +27,10 @@
 #     apt-get install mysql-client
 #
 #     mysql -uroot -ptoto -h 127.0.0.1 -P 3306
+#
+# If you want to change the password, execute the following SQL command:
+#
+#   ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 #-----------------------------------------------------------------------------
 #
 
