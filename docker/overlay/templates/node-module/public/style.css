@@ -1,0 +1,20 @@
+* {
+  font-size    : 12px;
+  font-family  : arial, helvetica, sans-serif;
+  padding      : 0px;
+  margin       : 0px;
+  border       : 0px solid black;
+}
+
+body {
+  padding      : 20px;    
+}
+
+.link {
+  cursor      : pointer;
+  border      : 1px solid #444;
+  border-top  : 1px solid #ccc;
+  border-left : 1px solid #ccc;
+  padding     : 4px;
+  background  : #eee;
+}
