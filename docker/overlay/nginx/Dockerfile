@@ -19,7 +19,7 @@
 #   /var/run                    [yes, default image]
 #   /usr/local/nginx/logs       [no, not default image]
 #
-# Found logs in:
+# Found logs in (redirecting to):
 #
 #   /var/log/nginx/access.log -> /dev/stdout
 #   /var/log/nginx/error.log -> /dev/stderr
@@ -27,6 +27,7 @@
 # Also found the following files:
 #
 #   /usr/share/nginx/html/50x.html
+#   /usr/share/nginx/html/index.html
 #-----------------------------------------------------------------------------
 #
 
