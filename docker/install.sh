@@ -25,4 +25,13 @@ installDocker() {
   #sudo docker run hello-world
 }
 
+#----------------------------------------------------------------------------------------
+# Install the Docker Compose utility
+#----------------------------------------------------------------------------------------
+installDockerCompose() {
+  sudo apt-get update
+  sudo apt-get install docker-compose
+}
+
 installDocker
+installDockerCompose
