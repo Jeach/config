@@ -9,15 +9,24 @@
 # By default, the configuration file is named 'nginx.conf' and placed in 
 # the directory:
 #
-#   /usr/local/nginx/conf
-#   /etc/nginx
-#   /usr/local/etc/nginx
+#   /etc/nginx                  [yes, default image]
+#   /usr/local/nginx/conf       [no, not default image]
+#   /usr/local/etc/nginx        [no, not default image]
 #
-# The process ID of the nginx master process is written, by default, to the
-# 'nginx.pid' in the directory:
+# The process ID of the nginx master process is written, by default, to
+# the 'nginx.pid' in the directory:
 #
-#   /usr/local/nginx/logs
-#   /var/run
+#   /var/run                    [yes, default image]
+#   /usr/local/nginx/logs       [no, not default image]
+#
+# Found logs in:
+#
+#   /var/log/nginx/access.log -> /dev/stdout
+#   /var/log/nginx/error.log -> /dev/stderr
+#
+# Also found the following files:
+#
+#   /usr/share/nginx/html/50x.html
 #-----------------------------------------------------------------------------
 #
 
