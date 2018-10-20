@@ -25,4 +25,4 @@ echo " > Command     : 'git clone https://github.com/${ORG}/${REPO}.git ${REPO}-
 echo
 echo "Starting..."
 
-#git clone https://github.com/${ORG}/${REPO}.git ${REPO}-$TS
+git clone https://github.com/${ORG}/${REPO}.git ${REPO}-$TS
