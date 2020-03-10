@@ -31,9 +31,6 @@ map <F3> :resize<CR> :vertical resize<CR>
 " Equalize width/height of all buffers
 map <F4> <C-w>=
 
-" List the buffers
-map <F5> :ls<CR>
-
 " Increase buffer by one line
 map <F7> :resize +1<CR>
 
