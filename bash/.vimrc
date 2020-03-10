@@ -1,7 +1,7 @@
 "-----------------------------------------------------------------------------
 " VIM configuration file
 "-----------------------------------------------------------------------------
-" Copyright (C) 2018 Christian Jean
+" Copyright (C) 2018-2020 Christian Jean
 " All Rights Reserved
 "-----------------------------------------------------------------------------
 " This configuration has mappings which provide VIM support in web based
@@ -9,6 +9,9 @@
 " for CTRL-C or CTRL-W.
 "-----------------------------------------------------------------------------
 "
+
+syntax on
+colorscheme desert
 
 set number
 set nowrap
@@ -22,8 +25,23 @@ set expandtab
 " Navigate to next pane
 map <F2> <C-w><C-w>
 
+" Resize horiz/verti buffer to maximum size
+map <F3> :resize<CR> :vertical resize<CR>
+
+" Equalize width/height of all buffers
+map <F4> <C-w>=
+
 " List the buffers
 map <F5> :ls<CR>
+
+" Increase buffer by one line
+map <F7> :resize +1<CR>
+
+" Decrease buffer by one line
+map <F8> :resize -1<CR>
+
+" List the buffers
+map <F12> :ls<CR>
 
 " Move focus to next/previous vsplit pane
 map <C-Left> <C-w>h
