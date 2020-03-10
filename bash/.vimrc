@@ -18,6 +18,7 @@ set nowrap
 set ruler
 set ignorecase
 set tabstop=2
+set belloff=all
 
 " Type ':retab' to fix all existing tabs
 set expandtab
