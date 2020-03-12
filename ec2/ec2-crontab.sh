@@ -4,6 +4,8 @@
 # All Rights Reserved
 #-----------------------------------------------------------------------------
 # Programatically add a crontab rule to shutdown the EC2 at 03:00 every day.
+# Currently set for 03:30 every night, non-UTC (beware of sytem UTC times).
+# Local 03:30 ETC is 07:30 UTC-04 or 08:30 UTC-05.
 #-----------------------------------------------------------------------------
 #
 
