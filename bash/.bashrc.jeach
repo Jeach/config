@@ -15,7 +15,8 @@
 alias ll='ls -hlaF'               # Show all w/ human readable file size
 alias ld='ls -hls -d */'          # Show only directories
 
-alias lh='cat ~/.bashrc | grep ^alias'  # Show the bash file and comments
+# Show this bash file's aliases and comments...
+alias lh="echo; cat ~/.bashrc | grep ^alias | sed 's/alias //g'"
 
 # More complex group...
 alias lld='ls -hls -d */'         # Show only directories
