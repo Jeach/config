@@ -4,22 +4,27 @@
 #-----------------------------------------------------------------------------
 # A custom '.bashrc' script for Jeach.
 #-----------------------------------------------------------------------------
+# Notes:
+#
+#   Add -r to reverse any order
+#   Add -C to force column mode
+#-----------------------------------------------------------------------------
 #
 
-
 # A few simple aliases...
-alias ll='ls -hla'                # Show all w/ human readable file size
+alias ll='ls -hlaF'               # Show all w/ human readable file size
 alias ld='ls -hls -d */'          # Show only directories
-alias lh='cat ~/.bashrc | grep ^alias'  # Show this bash file and comments
 
-# You can add -r to reverse any order...
-alias lld='ls -hlas -d */'        # Show only directories
-alias lls='ls -hlaS'              # Sort by file size
-alias llt='ls -hlat'              # Sort by file time and date
-alias llx='ls -hlaX'              # Sort by file extension name
+alias lh='cat ~/.bashrc | grep ^alias'  # Show the bash file and comments
 
-# List full path version...
+# More complex group...
+alias lld='ls -hls -d */'         # Show only directories
+alias lls='ll -S'                 # Sort by file size
+alias llt='ll -t'                 # Sort by file time and date
+alias llx='ll -X'                 # Sort by file extension name
+
+# Full path version...
 alias lldf='lld -d $PWD/*'        # Show only directories
-alias llsf='llt -d $PWD/*'        # Sort by file time
-alias lltf='lls -d $PWD/*'        # Sort by file size
+alias llsf='lls -d $PWD/*'        # Sort by file size
+alias lltf='llt -d $PWD/*'        # Sort by file time and date
 alias llxf='llx -d $PWD/*'        # Sort by file extension name
