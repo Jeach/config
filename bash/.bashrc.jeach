@@ -1,10 +1,25 @@
 #-----------------------------------------------------------------------------
-# Custom '.bashrc' script for Jeach.
+# Copyright (C) 2020 Christian Jean
+# All Rights Reserved.
 #-----------------------------------------------------------------------------
-# Copyright (C) 2013 Christian Jean
-# All Rights Reserved
+# A custom '.bashrc' script for Jeach.
 #-----------------------------------------------------------------------------
 #
 
-alias ll='ls -la'
 
+# A few simple aliases...
+alias ll='ls -hla'                # Show all w/ human readable file size
+alias ld='ls -hls -d */'          # Show only directories
+alias lh='cat ~/.bashrc | grep ^alias'  # Show this bash file and comments
+
+# You can add -r to reverse any order...
+alias lld='ls -hlas -d */'        # Show only directories
+alias lls='ls -hlaS'              # Sort by file size
+alias llt='ls -hlat'              # Sort by file time and date
+alias llx='ls -hlaX'              # Sort by file extension name
+
+# List full path version...
+alias lldf='lld -d $PWD/*'        # Show only directories
+alias llsf='llt -d $PWD/*'        # Sort by file time
+alias lltf='lls -d $PWD/*'        # Sort by file size
+alias llxf='llx -d $PWD/*'        # Sort by file extension name
